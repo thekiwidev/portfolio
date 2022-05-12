@@ -3,6 +3,8 @@ document.querySelector("img.menu").addEventListener("click", (e) => {
 });
 
 // margin top for most recent section cause of the fixed header
-document.getElementById("mostRecent").style.marginTop = `${
-  document.getElementById("head").offsetHeight + 34
-}px`;
+document.body.offsetWidth <= 550
+  ? (document.getElementById("mostRecent").style.marginTop = `${
+      document.getElementById("head").offsetHeight + 34
+    }px`)
+  : null;
